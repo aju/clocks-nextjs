@@ -1,0 +1,13 @@
+.marking {
+  width: 4px;
+  height: 96%;
+  top: 2%;
+  background: black;
+  left: calc(50% - 2px);
+  position: absolute;
+}
+
+.markingBold {
+  width: 6px;
+  left: calc(50% - 3px);
+}

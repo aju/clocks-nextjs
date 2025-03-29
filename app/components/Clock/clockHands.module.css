@@ -1,0 +1,41 @@
+.clockHandHours {
+  position: absolute;
+  width: 10px;
+  height: 30%;
+  background: var(--clock-elements-color);
+  top: calc(30% - 20px);
+  left: calc(50% - 5px);
+  transform-origin: 5px calc(100% - 20px);
+  transform: rotate(45deg);
+}
+
+.clockHandMinutes {
+  position: absolute;
+  width: 10px;
+  height: 50%;
+  background: var(--clock-elements-color);
+  top: calc(20px);
+  left: calc(50% - 5px);
+  transform-origin: 5px calc(100% - 20px);
+}
+
+.clockHandSeconds {
+  --clock-hand-seconds-width: 6px;
+  position: absolute;
+  width: var(--clock-hand-seconds-width);
+  height: 50%;
+  background: var(--clock-elements-color);
+  top: calc(20px);
+  left: calc(50% - var(--clock-hand-seconds-width) / 2);
+  transform-origin: calc(var(--clock-hand-seconds-width) / 2) calc(100% - 20px);
+}
+
+.dot {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: var(--clock-elements-color);
+  border-radius: 50%;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
