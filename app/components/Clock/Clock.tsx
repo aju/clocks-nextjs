@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react';
+import React from 'react';
 import style from './clock.module.css';
 import { getNumbersInRange } from '@/utils/getNumbersInRange';
 import { ClockMarkings } from './ClockMarkings';
