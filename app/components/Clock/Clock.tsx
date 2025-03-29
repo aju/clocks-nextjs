@@ -7,8 +7,8 @@ import { ClockMarkings } from './ClockMarkings';
 import { ClockHands } from './ClockHands';
 
 export default function Clock({ time }: { time: string }) {
-  const [rotationDegrees, setRotationDegrees] = useState<number>(90);
-  const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
+  // const [rotationDegrees, setRotationDegrees] = useState<number>(90);
+  // const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   // const [rotationDegrees, setRotationDegrees] = React.useState(90);
   // useEffect(() => {
   //   document.addEventListener('mousemove', (event) => {
