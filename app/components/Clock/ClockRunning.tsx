@@ -5,13 +5,21 @@ import Clock from './Clock';
 import useInterval from '@/app/helpers/useInterval';
 
 export default function ClockRunning() {
+  const currentDate = new Date();
+  const [time, setTime] = React.useState({
+    hours: currentDate.getHours(),
+    minutes: currentDate.getMinutes(),
+    seconds: currentDate.getSeconds(),
+  });
+
+  useInterval(() => {
     const currentDate = new Date();
-    const [time, setTime] = React.useState(`${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}}`);
+    setTime({
+      hours: currentDate.getHours(),
+      minutes: currentDate.getMinutes(),
+      seconds: currentDate.getSeconds(),
+    });
+  }, 1000);
 
-    useInterval(() => {
-        const currentDate = new Date();
-        setTime(`${currentDate.getHours()}:${currentDate.getMinutes()}:${currentDate.getSeconds()}}`);
-    }, 100);
-
-    return <Clock time={time} />
+  return <Clock hours={time.hours} minutes={time.minutes} seconds={time.seconds} />;
 }
