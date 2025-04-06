@@ -10,9 +10,7 @@ export default function Clock({ hours, minutes, seconds }: { hours: number; minu
   return (
     <div className={style.clock}>
       <ClockMarkings />
-      <div className={style.innerCircle}>
-        <ClockNumbers />www
-      </div>
+      <ClockNumbers />www
       <ClockHands hours={hours} minutes={minutes} seconds={seconds} />
     </div>
   );

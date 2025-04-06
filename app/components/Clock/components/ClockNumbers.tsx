@@ -1,10 +1,10 @@
 import React from 'react';
-import style from '../clock.module.css';
+import style from './ClockNumbers.module.css';
 import { getNumbersInRange } from '@/utils/getNumbersInRange';
 
 export const ClockNumbers = () => {
   return (
-    <>
+    <div className={style.innerCircle}>
       {getNumbersInRange(1, 12).map((number) => (
         <div
           key={number}
@@ -21,8 +21,9 @@ export const ClockNumbers = () => {
             {number}
           </div>
         </div>
+        
       ))}
-    </>
+    </div>
   );
 };
 

@@ -9,27 +9,3 @@
   border: 2px solid var(--clock-elements-color);
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
-
-.innerCircle {
-  width: 88%;
-  height: 88%;
-  top: 6%;
-  left: 6%;
-  position: absolute;
-  border-radius: 50%;
-  background: inherit;
-}
-
-.digitContainer {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 28px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
-  align-items: flex-start;
-  display: flex;
-  justify-content: center;
-  color: red; /* Make clock numbers red */
-}
